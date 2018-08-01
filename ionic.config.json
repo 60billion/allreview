@@ -1,0 +1,7 @@
+{
+  "name": "allrvw",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

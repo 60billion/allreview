@@ -1,0 +1,300 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment color="pink" [(ngModel)]="pet">
+      <ion-segment-button value="myPage">
+          <ion-icon name="clipboard"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="Wan!t">
+          <ion-icon name="thumbs-up"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="Fallowr">
+          <ion-icon name="contacts"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="Fallowing">
+          <ion-icon name="glasses"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+  
+  <ion-content >
+    <div [ngSwitch]="pet">
+      <ion-list *ngSwitchCase="'myPage'">
+        <!-- <ion-item>
+          <ion-avatar item-start>
+            <img src="assets/img/rel1.jpg">
+          </ion-avatar>
+          <h2>Ruby</h2>
+          <p>Allre: 1,012,352 points</p>
+          <p style="color: blueviolet">Change Profile</p>
+        </ion-item> -->
+        <ion-card id="content">
+            <ion-avatar id="profile-info">
+              <img id="profile-image" src="assets/img/rel1.jpg">
+            </ion-avatar>
+            <p style="text-align: center; font-weight: bold; ">Jihwan momy </p>
+            <p style="text-align: center; ">Hi, my name is Joe Doe and I have the most boring job in the most boring company <button ion-button small clear item-end color="pink">edit</button></p>
+            <ion-row >
+              <ion-col width-50>
+                  <button ion-button full color="pink" small icon-start>                  
+                  fallower 2,235 </button>
+              </ion-col>
+              <ion-col width-50>
+                <button ion-button full color="pink" small icon-start>              
+                fallowing 1,859
+                </button>
+              </ion-col>
+            </ion-row>   
+
+          </ion-card>
+
+        <ion-row class="card-background-pages">
+            <ion-col class="relative" width-50>
+                <ion-card>
+                    <img src="assets/img/rel1.jpg"/>                    
+                    <h2>Rabbit doll</h2>
+                    <progress-bar [progress]="50" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+                </ion-card>            
+                <ion-card>
+                    <img src="assets/img/rel2.jpg"/>
+                    <div class="card-titles">OnSale</div>
+                    <h2>Fashion Sunglasses</h2>                    
+                    <progress-bar [progress]="100" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+                </ion-card>         
+                <ion-card>
+                    <img src="assets/img/rel3.jpg"/>
+                    <h2>Hi bABY</h2>
+                    <progress-bar [progress]="80" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+                </ion-card>          
+                <ion-card>
+                    <img src="assets/img/rel4.jpg"/>
+                    <h2>Missing you</h2>
+                    <progress-bar [progress]="10" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+                </ion-card>
+            </ion-col>
+            <ion-col class="relative" width-50>
+                <ion-card>
+                    <img src="assets/img/rel4.jpg"/>
+                    <div class="card-titles">OnSale</div>
+                    <h2>SEe Ya!</h2>
+                    <progress-bar [progress]="100" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+                </ion-card>
+                <ion-card>
+                    <img src="assets/img/rel3.jpg"/>
+                    <h2>This is my book</h2>
+                    <progress-bar [progress]="60" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+                </ion-card>
+                <ion-card>
+                    <img src="assets/img/rel1.jpg"/>
+                    <div class="card-titles">OnSale</div>
+                    <h2>Title is title</h2>
+                    <progress-bar [progress]="100" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+                </ion-card>
+                <ion-card>
+                    <img src="assets/img/rel2.jpg"/>
+                    <h2>Used H2 Tags..</h2>
+                    <progress-bar [progress]="10" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+                </ion-card>
+            </ion-col>
+        </ion-row>
+      </ion-list>
+  
+      <ion-list *ngSwitchCase="'Wan!t'">
+          <ion-row class="card-background-pages">
+            <ion-col class="relative" width-50>
+                <ion-card>
+                    <img src="assets/img/gridTest/grid2.jpg"/>                    
+                    <h2>Rabbit doll</h2>
+                    <progress-bar [progress]="50" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+                </ion-card>            
+                <ion-card>
+                    <img src="assets/img/gridTest/grid3.jpg"/>
+                    <div class="card-titles">OnSale</div>
+                    <h2>Fashion Sunglasses</h2>                    
+                    <progress-bar [progress]="100" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+                </ion-card>         
+                <ion-card>
+                    <img src="assets/img/gridTest/grid5.jpg"/>
+                    <h2>Hi bABY</h2>
+                    <progress-bar [progress]="80" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+                </ion-card>          
+                <ion-card>
+                    <img src="assets/img/rel4.jpg"/>
+                    <h2>Missing you</h2>
+                    <progress-bar [progress]="10" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+                </ion-card>
+            </ion-col>
+            <ion-col class="relative" width-50>
+                <ion-card>
+                    <img src="assets/img/gridTest/grid6.jpg"/>
+                    <div class="card-titles">OnSale</div>
+                    <h2>SEe Ya!</h2>
+                    <progress-bar [progress]="100" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+                </ion-card>
+                <ion-card>
+                    <img src="assets/img/gridTest/grid9.jpg"/>
+                    <h2>This is my book</h2>
+                    <progress-bar [progress]="60" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+                </ion-card>
+                <ion-card>
+                    <img src="assets/img/rel1.jpg"/>
+                    <div class="card-titles">OnSale</div>
+                    <h2>Title is title</h2>
+                    <progress-bar [progress]="100" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+                </ion-card>
+                <ion-card>
+                    <img src="assets/img/rel2.jpg"/>
+                    <h2>Used H2 Tags..</h2>
+                    <progress-bar [progress]="10" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+                </ion-card>
+            </ion-col>
+        </ion-row>
+      </ion-list>
+  
+      <ion-list *ngSwitchCase="'Fallowr'">
+          <ion-searchbar></ion-searchbar>
+          <ion-item-group>
+              <ion-item-divider color="pink" style="text-align: center;  font-size:150%;">Fallowor: 1,902</ion-item-divider>
+          </ion-item-group>          
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/img/thumbnail-totoro.png">
+            </ion-avatar>
+            <h2>Totoro posted new photos</h2>
+            <p>30mins ago • 2018</p>
+            <button ion-button clear item-end color="pink">View</button>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/img/marshmallow-man.png">
+            </ion-avatar>
+            <h2>new videos from marshmallow</h2>
+            <p>posted 23hrs ago • 2018</p>
+            <button ion-button clear item-end color="pink">View</button>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/img/sarah-avatar.png.jpeg">
+            </ion-avatar>
+            <h2>Sarah is your recommend friend</h2>
+            <p>She lives in DaeJeon • 2018</p>
+            <button ion-button clear item-end color="pink">View</button>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/img/test2.jpg">
+            </ion-avatar>
+            <h2>My Neighbor Totoro</h2>
+            <p>Hayao Miyazaki • 1988</p>
+            <button ion-button clear item-end color="pink">View</button>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/img/rel2.jpg">
+            </ion-avatar>
+            <h2>You got a message from Shan</h2>
+            <p>195days ago • 2017</p>
+            <button ion-button clear item-end color="pink">View</button>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/img/sarah-avatar.png.jpeg">
+            </ion-avatar>
+            <h2>Sarah is your recommend friend</h2>
+            <p>She lives in DaeJeon • 2018</p>
+            <button ion-button clear item-end color="pink">View</button>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/img/test2.jpg">
+            </ion-avatar>
+            <h2>My Neighbor Totoro</h2>
+            <p>Hayao Miyazaki • 1988</p>
+            <button ion-button clear item-end color="pink">View</button>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/img/rel2.jpg">
+            </ion-avatar>
+            <h2>You got a message from Shan</h2>
+            <p>195days ago • 2017</p>
+            <button ion-button clear item-end color="pink">View</button>
+          </ion-item>
+      </ion-list>
+      <ion-list *ngSwitchCase="'Fallowing'">
+          <ion-searchbar></ion-searchbar>
+          <ion-item-group>
+              <ion-item-divider color="pink" style="text-align: center;  font-size:150%;">Fallowing: 817 </ion-item-divider>
+          </ion-item-group>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/img/test2.jpg">
+            </ion-avatar>
+            <h2>My Neighbor Totoro</h2>
+            <p>Hayao Miyazaki • 1988</p>
+            <button ion-button clear item-end color="pink">View</button>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/img/rel2.jpg">
+            </ion-avatar>
+            <h2>You got a message from Shan</h2>
+            <p>195days ago • 2017</p>
+            <button ion-button clear item-end color="pink">View</button>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/img/sarah-avatar.png.jpeg">
+            </ion-avatar>
+            <h2>Sarah is your recommend friend</h2>
+            <p>She lives in DaeJeon • 2018</p>
+            <button ion-button clear item-end color="pink">View</button>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/img/test2.jpg">
+            </ion-avatar>
+            <h2>My Neighbor Totoro</h2>
+            <p>Hayao Miyazaki • 1988</p>
+            <button ion-button clear item-end color="pink">View</button>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/img/rel2.jpg">
+            </ion-avatar>
+            <h2>You got a message from Shan</h2>
+            <p>195days ago • 2017</p>
+            <button ion-button clear item-end color="pink">View</button>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/img/thumbnail-totoro.png">
+            </ion-avatar>
+            <h2>Totoro posted new photos</h2>
+            <p>30mins ago • 2018</p>
+            <button ion-button clear item-end color="pink">View</button>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/img/marshmallow-man.png">
+            </ion-avatar>
+            <h2>new videos from marshmallow</h2>
+            <p>posted 23hrs ago • 2018</p>
+            <button ion-button clear item-end color="pink">View</button>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/img/sarah-avatar.png.jpeg">
+            </ion-avatar>
+            <h2>Sarah is your recommend friend</h2>
+            <p>She lives in DaeJeon • 2018</p>
+            <button ion-button clear item-end color="pink">View</button>
+          </ion-item>
+          
+        </ion-list>
+    </div>
+  </ion-content>
+  

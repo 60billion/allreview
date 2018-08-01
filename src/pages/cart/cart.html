@@ -1,0 +1,254 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+    
+      <div padding>
+          <ion-segment color="pink" [(ngModel)]="cart">
+            <ion-segment-button value="basket">
+              <ion-icon name="basket"><small style="font-weight: bold"> CART</small></ion-icon>
+            </ion-segment-button>
+            <ion-segment-button value="orders">
+              <ion-icon name="pricetags"><small style="font-weight: bold"> ORDERS</small></ion-icon>
+            </ion-segment-button>
+          </ion-segment>
+        </div>
+        
+        <div [ngSwitch]="cart">
+          <ion-list *ngSwitchCase="'basket'" class="list-cart-page">
+             
+                  <ion-list-header>
+                    Basket 2018.07.29
+                  </ion-list-header>
+                    <ion-item>
+                      <ion-thumbnail item-start>
+                        <img src="assets/img/gridTest/grid1.jpg">
+                      </ion-thumbnail>
+                      <h2>Baby toddler shoese</h2>
+                      <p>Quantity:3</p>
+                      <ion-note item-end color="pink">12,253원</ion-note>
+                      <button ion-button end color="pink" icon-start>
+                          <ion-icon name="add"></ion-icon>
+                          ADD
+                      </button>
+                      <button ion-button end color="pink" icon-start>
+                          <ion-icon name="trash"></ion-icon>
+                          REMOVE
+                      </button>
+                    </ion-item>
+                    <ion-item>
+                        <ion-thumbnail item-start>
+                          <img src="assets/img/gridTest/grid2.jpg">
+                        </ion-thumbnail>
+                        <h2>Baby toddler shoese</h2>
+                        <p>Quantity:1</p>
+                        <ion-note item-end color="pink">12,253원</ion-note>
+                        <button ion-button end color="pink" icon-start>
+                            <ion-icon name="add"></ion-icon>
+                            ADD
+                        </button>
+                        <button ion-button end color="pink" icon-start>
+                            <ion-icon name="trash"></ion-icon>
+                            REMOVE
+                        </button>
+                      </ion-item>
+                      <ion-item>
+                          <ion-thumbnail item-start>
+                            <img src="assets/img/gridTest/grid3.jpg">
+                          </ion-thumbnail>
+                          <h2>Baby toddler shoese</h2>
+                          <p>Quantity:1</p>
+                          <ion-note item-end color="pink">12,253원</ion-note>
+                          <button ion-button end color="pink" icon-start>
+                              <ion-icon name="add"></ion-icon>
+                              ADD
+                          </button>
+                          <button ion-button end color="pink" icon-start>
+                              <ion-icon name="trash"></ion-icon>
+                              REMOVE
+                          </button>
+                        </ion-item>
+                        <ion-list-header>
+                            Basket 2018.06.23
+                        </ion-list-header>
+                        <ion-item>
+                            <ion-thumbnail item-start>
+                              <img src="assets/img/gridTest/grid6.jpg">
+                            </ion-thumbnail>
+                            <h2>Baby toddler shoese</h2>
+                            <p>Quantity:2</p>
+                            <ion-note item-end color="pink">12,253원</ion-note>
+                            <button ion-button end color="pink" icon-start>
+                                <ion-icon name="add"></ion-icon>
+                                ADD
+                            </button>
+                            <button ion-button end color="pink" icon-start>
+                                <ion-icon name="trash"></ion-icon>
+                                REMOVE
+                            </button>
+                          </ion-item>                                                                  
+                          <ion-item>
+                              <ion-thumbnail item-start>
+                                <img src="assets/img/gridTest/grid1.jpg">
+                              </ion-thumbnail>
+                              <h2>Baby toddler shoese</h2>
+                              <p>Quantity:1</p>
+                              <ion-note item-end color="pink">12,253원</ion-note>
+                              <button ion-button end color="pink" icon-start>
+                                  <ion-icon name="add"></ion-icon>
+                                  ADD
+                              </button>
+                              <button ion-button end color="pink" icon-start>
+                                  <ion-icon name="trash"></ion-icon>
+                                  REMOVE
+                              </button>
+                            </ion-item>   
+                            <ion-item>
+                                <ion-thumbnail item-start>
+                                  <img src="assets/img/gridTest/grid3.jpg">
+                                </ion-thumbnail>
+                                <h2>Baby toddler shoese</h2>
+                                <p>Quantity:2</p>
+                                <ion-note item-end color="pink">12,253원</ion-note>
+                                <button ion-button end color="pink" icon-start>
+                                    <ion-icon name="add"></ion-icon>
+                                    ADD
+                                </button>
+                                <button ion-button end color="pink" icon-start>
+                                    <ion-icon name="trash"></ion-icon>
+                                    REMOVE
+                                </button>
+                              </ion-item>   
+                              <ion-item>
+                                <ion-thumbnail item-start>
+                                  <img src="assets/img/gridTest/grid4.png">
+                                </ion-thumbnail>
+                                <h2>Baby toddler shoese</h2>
+                                <p>Quantity:3</p>
+                                <ion-note item-end color="pink">12,253원</ion-note>
+                                <button ion-button end color="pink" icon-start>
+                                    <ion-icon name="add"></ion-icon>
+                                    ADD
+                                </button>
+                                <button ion-button end color="pink" icon-start>
+                                    <ion-icon name="trash"></ion-icon>
+                                    REMOVE
+                                </button>
+                              </ion-item>                                                                               
+                              
+                            
+          </ion-list>
+        
+          <ion-list *ngSwitchCase="'orders'" class="list-avatar-page">
+              <ion-list-header>Today 2018.07.30</ion-list-header>
+
+              <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="assets/img/rel1.jpg">
+                </ion-thumbnail>
+                <h2>12,253원</h2>
+                <p>This town ain't big enough for the two of us!</p>
+                <ion-note item-end color="pink">배송중</ion-note>
+              </ion-item>
+          
+              <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="assets/img/rel2.jpg">
+                </ion-thumbnail>
+                <h2>52,565원</h2>
+                <p>My eyeballs could have been sucked from their sockets!</p>
+                <ion-note item-end color="pink">배송완료</ion-note>
+              </ion-item>
+          
+              <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="assets/img/rel3.jpg">
+                </ion-thumbnail>
+                <h2>45,125원</h2>
+                <p>Well aren't you just the sweetest space toy I ever did meet!</p>
+                <ion-note item-end color="pink">10:03 am 구매확정</ion-note>
+              </ion-item>
+          
+              <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="assets/img/rel4.jpg">
+                </ion-thumbnail>
+                <h2>1,123,122원</h2>
+                <p>You're not turning me into a Mashed Potato.</p>
+                <ion-note item-end color="pink">5:47 am 구매확정</ion-note>
+              </ion-item>
+
+              <ion-list-header>2018.07.15</ion-list-header>
+
+              <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="assets/img/rel1.jpg">
+                </ion-thumbnail>
+                <h2>450,000원</h2>
+                <p>This town ain't big enough for the two of us!</p>
+                <ion-note item-end color="pink">3:43 pm 구매확정</ion-note>
+              </ion-item>
+              <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="assets/img/rel3.jpg">
+                </ion-thumbnail>
+                <h2>99,800원</h2>
+                <p>This town ain't big enough for the two of us!</p>
+                <ion-note item-end color="pink">3:43 pm 구매취소</ion-note>
+              </ion-item>
+
+          </ion-list>
+        </div>
+
+        </ion-content >
+        <div [ngSwitch]="cart">
+          <ion-footer *ngSwitchCase="'basket'" no-shadow class="footer">
+              <ion-toolbar position="bottom">
+                  <button ion-button full color="pink">Total: 2,340원 Buy Now</button>
+              </ion-toolbar>
+          </ion-footer>
+        </div>
+
+        
+        
+        
+
+
+<!-- 
+
+  <div padding>
+      <ion-segment color="pink" [(ngModel)]="cart">
+        <ion-segment-button value="basket">
+            <ion-icon name="basket"><small style="font-weight: bold"> 장바구니</small></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="orders">
+            <ion-icon name="pricetags"><small style="font-weight: bold"> 주문내역</small></ion-icon>
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+    
+    <div [ngSwitch]="cart">
+      <ion-list *ngSwitchCase="basket">
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="img/thumbnail-puppy-1.jpg">
+          </ion-thumbnail>
+          <h2>Ruby</h2>
+        </ion-item>
+        ...
+      </ion-list>
+    
+      <ion-list *ngSwitchCase="orders">
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="img/thumbnail-kitten-1.jpg">
+          </ion-thumbnail>
+          <h2>Luna</h2>
+        </ion-item>
+        ...
+      </ion-list>
+    </div> -->
