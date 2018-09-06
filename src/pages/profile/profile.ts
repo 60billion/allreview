@@ -7,7 +7,7 @@ import { Platform } from 'ionic-angular';
   templateUrl: 'profile.html'
 })
 export class Profile {
-  pet: string = "myPage";
+  profile: string = "myPage";
   isAndroid: boolean = false;
 
   constructor(public navCtrl: NavController, platform: Platform) {

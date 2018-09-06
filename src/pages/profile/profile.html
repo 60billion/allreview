@@ -3,7 +3,7 @@
   </ion-navbar>
 
   <ion-toolbar no-border-top>
-    <ion-segment color="pink" [(ngModel)]="pet">
+    <ion-segment color="pink" [(ngModel)]="profile">
       <ion-segment-button value="myPage">
           <ion-icon name="clipboard"></ion-icon>
       </ion-segment-button>
@@ -21,7 +21,7 @@
 </ion-header>
   
   <ion-content >
-    <div [ngSwitch]="pet">
+    <div [ngSwitch]="profile">
       <ion-list *ngSwitchCase="'myPage'">
         <!-- <ion-item>
           <ion-avatar item-start>
@@ -52,54 +52,36 @@
           </ion-card>
 
         <ion-row class="card-background-pages">
-            <ion-col class="relative" width-50>
-                <ion-card>
-                    <img src="assets/img/rel1.jpg"/>                    
-                    <h2>Rabbit doll</h2>
-                    <progress-bar [progress]="50" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
-                </ion-card>            
-                <ion-card>
-                    <img src="assets/img/rel2.jpg"/>
-                    <div class="card-titles">OnSale</div>
-                    <h2>Fashion Sunglasses</h2>                    
-                    <progress-bar [progress]="100" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
-                </ion-card>         
-                <ion-card>
-                    <img src="assets/img/rel3.jpg"/>
-                    <h2>Hi bABY</h2>
-                    <progress-bar [progress]="80" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
-                </ion-card>          
-                <ion-card>
-                    <img src="assets/img/rel4.jpg"/>
-                    <h2>Missing you</h2>
-                    <progress-bar [progress]="10" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
-                </ion-card>
+            <ion-col class="relative" cal-6>
+              <ion-card>
+                  <img src="assets/img/rel1.jpg"/>                    
+                  <h2>Rabbit doll</h2>
+                  <progress-bar [progress]="50" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+              </ion-card>      
+              <ion-card>
+                <img src="assets/img/rel1.jpg"/>                    
+                <h2>Rabbit doll</h2>
+                <progress-bar [progress]="50" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+            </ion-card>                            
             </ion-col>
-            <ion-col class="relative" width-50>
-                <ion-card>
-                    <img src="assets/img/rel4.jpg"/>
-                    <div class="card-titles">OnSale</div>
-                    <h2>SEe Ya!</h2>
-                    <progress-bar [progress]="100" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
-                </ion-card>
-                <ion-card>
-                    <img src="assets/img/rel3.jpg"/>
-                    <h2>This is my book</h2>
-                    <progress-bar [progress]="60" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
-                </ion-card>
-                <ion-card>
-                    <img src="assets/img/rel1.jpg"/>
-                    <div class="card-titles">OnSale</div>
-                    <h2>Title is title</h2>
-                    <progress-bar [progress]="100" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
-                </ion-card>
-                <ion-card>
-                    <img src="assets/img/rel2.jpg"/>
-                    <h2>Used H2 Tags..</h2>
-                    <progress-bar [progress]="10" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
-                </ion-card>
+
+         
+
+            <ion-col class="relative" cal-6>
+              <ion-card>
+                  <img src="assets/img/rel1.jpg"/>                    
+                  <h2>Rabbit doll</h2>
+                  <progress-bar [progress]="50" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+              </ion-card>  
+              <ion-card>
+                <img src="assets/img/rel1.jpg"/>                    
+                <h2>Rabbit doll</h2>
+                <progress-bar [progress]="50" [color-degraded]="{'0': '#fbd6e0',  '50': '#f9c3d3', '80': '#fd8c8e'}"></progress-bar>  
+            </ion-card>            
             </ion-col>
+    
         </ion-row>
+
       </ion-list>
   
       <ion-list *ngSwitchCase="'Wan!t'">
